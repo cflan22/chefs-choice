@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details - Chef's Choice</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="appTitle">Chef's Choice</h1>
+        <nav>
+            <a href="/vault" id="vaultLink">Back to Vault</a>
+        </nav>
+    </header>
+    <main id="mainContent">
+        <div id="recipeContainer">
+            <h2 id="recipeTitle">Loading...</h2>
+            <section id="recipeDetails">
+                <h3>Ingredients</h3>
+                <p id="recipeIngredients">Loading...</p>
+                <h3>Instructions</h3>
+                <p id="recipeInstructions">Loading...</p>
+            </section>
+            <aside id="notesSection">
+                <h3>Notes</h3>
+                <div id="notesContainer"></div>
+                <input type="text" id="noteInput" placeholder="Add a note..." />
+                <button id="addNoteButton">Add Note</button>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Chef's Choice</p>
+    </footer>
+    <script src="/static/recipe_detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Choice</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="appTitle">Chef's Choice</h1>
+        <nav>
+            <a href="/vault" id="vaultLink">Recipe Vault</a>
+        </nav>
+    </header>
+    <main id="mainContent">
+        <div id="chatContainer">
+            <div id="chatOutput"></div>
+            <div id="chatInputContainer">
+                <form id="chatForm">
+                    <input type="text" id="chatInput" placeholder="Type your recipe request here..." required />
+                    <button type="submit" id="sendButton">Send</button>
+                </form>
+                <button id="saveButton">Save Recipe</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Chef's Choice</p>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>

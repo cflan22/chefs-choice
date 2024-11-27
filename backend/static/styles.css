@@ -1,0 +1,122 @@
+/* General Reset */
+body, h1, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#appTitle {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+#chatContainer {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+#chatOutput {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.user-message {
+    text-align: right;
+    color: #333;
+    margin: 5px 0;
+}
+
+.bot-recipe {
+    text-align: left;
+    color: #555;
+    margin: 10px 0;
+    background-color: #e9ffe9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#chatInputContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#chatInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#sendButton, #saveButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#sendButton:hover, #saveButton:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
